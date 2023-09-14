@@ -116,7 +116,7 @@ std::string get_tops(const std::unordered_map<size_t, std::stack<char>> boxes)
 
 int main()
 {
-	// I could use an array instead of map, but having to subtract 1 when indexing into it would be too much hassle to debug. This solves the problem.
+	// I could use an array instead of a map, but having to subtract 1 when indexing into it would be too much hassle to debug. This solves the problem.
 	std::unordered_map<size_t, std::stack<char>> boxes;
 	std::vector<std::string> instructions;
 
