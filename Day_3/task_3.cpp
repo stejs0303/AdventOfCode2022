@@ -49,18 +49,18 @@ char find_same(const std::string& bag)
 
 char find_same_in_group(const std::string& bag_1, const std::string& bag_2, const std::string& bag_3)
 {
-	std::unordered_set<char> compartment;
-	std::unordered_set<char> partially_filtered;
+	std::unordered_set<char> bag;
+	std::unordered_set<char> partially_filtered_bag;
 
 	for (auto& c : bag_1)
-		compartment.insert(c);
+		bag.insert(c);
 
 	for (auto& c : bag_2)
-		if (compartment.contains(c))
-			partially_filtered.insert(c);
+		if (bag.contains(c))
+			partially_filtered_bag.insert(c);
 
 	for (auto& c : bag_3)
-		if (partially_filtered.contains(c)) 
+		if (partially_filtered_bag.contains(c)) 
 			return c;
 	
 	return NULL;
