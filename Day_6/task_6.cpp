@@ -4,7 +4,7 @@
 #include <chrono>
 
 
-void load_input(std::string&& filepath, std::string& out)
+void load_input(const std::string&& filepath, std::string& out)
 {
 	std::ifstream file(filepath);
 	std::getline(file, out);
@@ -12,7 +12,7 @@ void load_input(std::string&& filepath, std::string& out)
 }
 
 
-int find_packet_marker(std::string& seq)
+int find_packet_marker(const std::string& seq)
 {
 	for (size_t i = 3; i < seq.length(); i++)
 		if (seq[i - 3] != seq[i - 2] and seq[i - 3] != seq[i - 1] and seq[i - 3] != seq[i] and
@@ -23,7 +23,7 @@ int find_packet_marker(std::string& seq)
 }
 
 
-int find_message_marker(std::string_view&& seq)
+int find_message_marker(const std::string_view&& seq)
 {
 	auto check_subsequence = [&](size_t i) 
 	{
@@ -40,7 +40,7 @@ int find_message_marker(std::string_view&& seq)
 }
 
 
-void test(std::string& data)
+void test(const std::string& data)
 {
 	using std::chrono::high_resolution_clock;
 	using std::chrono::duration;
