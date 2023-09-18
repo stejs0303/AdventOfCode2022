@@ -19,14 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Day_5\task_5.cpp" />
+    <ClCompile Include="Day_6\task_6.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Day_5\instruction.txt" />
-    <Text Include="Day_5\table.txt" />
+    <Text Include="Day_6\input.txt" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
