@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Day_8\task_8.cpp">
+    <ClCompile Include="Day_9\task_9.cpp">
       <Filter>Zdrojové soubory</Filter>
     </ClCompile>
   </ItemGroup>
@@ -23,6 +23,6 @@
     <None Include=".gitignore" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Day_8\forest.txt" />
+    <Text Include="Day_9\input.txt" />
   </ItemGroup>
 </Project>
