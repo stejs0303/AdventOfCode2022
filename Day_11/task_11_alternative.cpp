@@ -88,8 +88,8 @@ int64_t loop(std::vector<std::queue<int64_t>>& monkeys, std::vector<int64_t> ins
 			size_t size = monkeys[id].size();
 			for (size_t i = 0; i < size; i++)
 			{
-				operation((Monkeys)id, monkeys[id].front());
-				auto [receiver, value] = test_part2((Monkeys)id, monkeys[id].front());
+				operation(static_cast<Monkeys>(id), monkeys[id].front());
+				auto [receiver, value] = test_part2(static_cast<Monkeys>(id), monkeys[id].front());
 				monkeys[id].pop();
 				inspections[id]++;
 				monkeys[receiver].push(value);

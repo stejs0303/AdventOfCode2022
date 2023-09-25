@@ -20,4 +20,9 @@
   <ItemGroup>
     <Text Include="Day_11\monkeys.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Day_11\task_11_alternative.cpp">
+      <Filter>Zdrojové soubory</Filter>
+    </ClCompile>
+  </ItemGroup>
 </Project>

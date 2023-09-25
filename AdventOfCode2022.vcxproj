@@ -24,6 +24,9 @@
   <ItemGroup>
     <Text Include="Day_11\monkeys.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Day_11\task_11_alternative.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
